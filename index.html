@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="workspace">
+    <div class="toolbar">
+      <div class="clear tool">
+        <button id="clear-canvas">Clear canvas</button>
+      </div>
+      
+      <div class="scale tool">
+        <div class="header">Scale</div>
+
+        <div class="scale-regulator">
+          <input class="field" type="number" value="100" placeholder="Enter scale here">
+          <span>%</span>
+          <button id="scale-confirm">Confirm</button>
+        </div>
+      </div>
+
+      <div class="shape tool" title="Shape">
+        <div class="header">Shape</div>
+
+        <ul class="shape-list">
+          <li>
+            <form id="square-form">
+              <div class="name">Square</div>
+
+              <div class="coordenates">
+                <label>
+                  <span title="X coordenate">X:</span>
+                  <input type="number" name="x" placeholder="Enter X" value="20">
+                </label>
+  
+                <label>
+                  <span title="Y coordenate">Y:</span>
+                  <input type="number" name="y" placeholder="Enter Y" value="20">
+                </label>
+              </div>
+  
+              <div class="size">
+                <label>
+                  <span title="Side size">Size:</span>
+                  <input type="number" name="size" placeholder="Enter side size" value="100">
+                </label>
+              </div>
+  
+              <button id="draw-square" class="draw-button">Draw square</button>
+            </form>
+          </li>
+
+          <li>
+            <form id="rectangle-form">
+              <div class="name">Rectangle</div>
+
+              <div class="coordenates">
+                <label>
+                  <span title="X coordenate">X:</span>
+                  <input type="number" name="x" placeholder="Enter X" value="20">
+                </label>
+  
+                <label>
+                  <span title="Y coordenate">Y:</span>
+                  <input type="number" name="y" placeholder="Enter Y" value="20">
+                </label>
+              </div>
+  
+              <div class="size">
+                <label>
+                  <span title="Width">W:</span>
+                  <input type="number" name="width" placeholder="Enter width" value="100">
+                </label>
+  
+                <label>
+                  <span title="Height">H:</span>
+                  <input type="number" name="height" placeholder="Enter height" value="60">
+                </label>
+              </div>
+  
+              <button id="draw-rectangle" class="draw-button">Draw rectangle</button>
+            </form>
+          </li>
+
+          <li>
+            <form id="circle-form">
+              <div class="name">Circle</div>
+
+              <div class="coordenates">
+                <label>
+                  <span title="X coordenate">X:</span>
+                  <input type="number" name="x" placeholder="Enter X" value="100">
+                </label>
+  
+                <label>
+                  <span title="Y coordenate">Y:</span>
+                  <input type="number" name="y" placeholder="Enter Y" value="100">
+                </label>
+              </div>
+  
+              <div class="size">
+                <label>
+                  <span class="Radius">Radius:</span>
+                  <input type="number" name="radius" placeholder="Enter radius" value="30">
+                </label>
+              </div>
+  
+              <button id="draw-circle" class="draw-button">Draw circle</button>  
+            </form>
+          </li>
+
+          <li>
+            <form id="oval-form">
+              <div class="name">Oval</div>
+
+              <div class="coordenates">
+                <label>
+                  <span title="X coordenate">X:</span>
+                  <input type="number" name="x" placeholder="Enter X" value="100">
+                </label>
+  
+                <label>
+                  <span title="Y coordenate">Y:</span>
+                  <input type="number" name="y" placeholder="Enter Y" value="100">
+                </label>
+              </div>
+  
+              <div class="size">
+                <label>
+                  <span title="Big radius">BR:</span>
+                  <input type="number" name="bigRadius" placeholder="Enter big radius" value="40">
+                </label>
+                <br>
+                <label>
+                  <span title="Small radius">SR:</span>
+                  <input type="number" name="smallRadius" placeholder="Enter small radius" value="25">
+                </label>
+              </div>
+  
+              <button id="draw-oval" class="draw-button">Draw oval</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fill tool">
+        <div class="header">Fill</div>
+
+        <div class="colors">
+          <div class="styles">
+
+          </div>
+
+          <div class="colors">
+            <div class="red colors__item">
+              <span class="color"></span><span>Red</span>
+            </div>
+
+            <div class="green colors__item">
+              <span class="color"></span><span>Green</span>
+            </div>
+            
+            <div class="blue colors__item">
+              <span class="color"></span><span>Blue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="canvas" width="498px" height="498px"></canvas>
+  </div>
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
