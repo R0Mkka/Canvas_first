@@ -103,15 +103,15 @@ body {
 }
 
 .colors .red .color {
-  background-color: red;
+  background-color: #ff4a4a;
 }
 
 .colors .green .color {
-  background-color: green;
+  background-color: #6ade6c;
 }
 
 .colors .blue .color {
-  background-color: blue;
+  background-color: #4f61ff;
 }
 
 canvas {

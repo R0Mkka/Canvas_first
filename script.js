@@ -101,15 +101,15 @@ drawOvalButton.onclick = (event) => {
 }
 
 fillWithRedButton.onclick = () => {
-  fillFunction('red')();
+  fillFunction('#ff4a4a')();
 };
 
 fillWithGreenButton.onclick = () => {
-  fillFunction('green')();
+  fillFunction('#6ade6c')();
 }
 
 fillWithBlueButton.onclick = () => {
-  fillFunction('blue')();
+  fillFunction('#4f61ff')();
 }
 
 function getDataFromForm(formElement) {
